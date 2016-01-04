@@ -1,0 +1,30 @@
+{
+  "name": "karmatest",
+  "version": "1.0.0",
+  "description": "Some experiment to learn use karmajs.",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josskar/karmatest.git"
+  },
+  "author": "Josue Chavez Aviles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josskar/karmatest/issues"
+  },
+  "homepage": "https://github.com/josskar/karmatest",
+  "dependencies": {
+    "angular": "^1.4.8"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.8",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.17",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.2",
+    "phantomjs": "^1.9.19"
+  }
+}
