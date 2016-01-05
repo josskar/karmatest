@@ -47,4 +47,18 @@ describe('Tests', function(){
             expect(element.html()).toContain('Lidless, wreathed in flame, 2 times');
         });
     });
+
+    describe('Person', function () {
+
+        var Person;
+        beforeEach(inject(function (_Person_) {
+            Person = _Person_;
+        }));
+
+        describe('Constructor', function () {
+            it('assigns a name', function () {
+                expect((new Person('Ben')).name).toEqual('Ben');
+            });
+        });
+    });
 });

@@ -26,4 +26,10 @@ angular.module('MyApp', [])
         replace: true,
         template: '<h1>Lidless, wreathed in flame, {{1 + 1}} times</h1>'
     };
+})
+
+.factory('Person', function () {
+    return function Person (name) {
+        this.name = name;
+    };
 });
