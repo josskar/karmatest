@@ -33,4 +33,18 @@ describe('Tests', function(){
             expect($scope.strength).toEqual('weak');
         });
     });
+
+    describe('Directives', function(){
+        var compile, rootScope;
+
+        beforeEach(inject(function($compile, $rootScope){
+            compile = $compile;
+            rootScope = $rootScope;
+        }));
+        it('Replaces the element with the appropriate content', function(){
+            var element = compile('<a-great-eye></a-great-eye>')(rootScope);
+            rootScope.$digest();
+            expect(element.html()).toContain('Lidless, wreathed in flame, 2 times');
+        });
+    });
 });

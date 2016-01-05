@@ -1,4 +1,5 @@
 angular.module('MyApp', [])
+
 .filter('reverse', [function(){
     return function(string){
         return string.split('').reverse().join('');
@@ -18,3 +19,11 @@ angular.module('MyApp', [])
         }
     };
 })
+
+.directive('aGreatEye', function () {
+    return {
+        restrict: 'E',
+        replace: true,
+        template: '<h1>Lidless, wreathed in flame, {{1 + 1}} times</h1>'
+    };
+});
